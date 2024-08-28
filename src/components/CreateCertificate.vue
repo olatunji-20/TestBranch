@@ -17,7 +17,7 @@ export default {
 
 <style>
 .cert {
-    background-image: url("certificate-banner.png")
+    background-image: url("homepage_images/certificate-banner.png")
 }
 
 </style>

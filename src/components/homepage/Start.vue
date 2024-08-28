@@ -9,10 +9,10 @@
         </div>
 
         <div class="w-[230px] h-[230px] absolute -bottom-16 -left-4">
-            <q-img src="blue_v1.png" class="object-contain" />
+            <q-img src="homepage_images/blue_v1.png" class="object-contain" />
         </div>
         <div class="w-[230px] h-[230px] absolute -bottom-8 right-0">
-            <q-img src="green_v1.png" class="object-contain" />
+            <q-img src="homepage_images/green_v1.png" class="object-contain" />
         </div>
     </div>
 </template>

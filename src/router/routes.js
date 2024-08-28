@@ -3,9 +3,17 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: () => import('pages/IndexPage.vue') },
+      { path: '/about-us', component: () => import('pages/AboutUs.vue') }
     ]
   },
+  // {
+  //   path: '/about-us',
+  //   component: () => import('layouts/MainLayout.vue'),
+  //   children: [
+  //     { path: '', component: () => import('pages/AboutUs.vue') }
+  //   ]
+  // },
 
   // Always leave this as last one,
   // but you can also remove it

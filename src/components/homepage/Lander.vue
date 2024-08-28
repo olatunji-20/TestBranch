@@ -10,10 +10,9 @@
             </div>
         </div>
         <div class="col-4.5">
-            <img src="homepage-hero.png" class="border h-[400px]" />
+            <img src="homepage_images/homepage-hero.png" class="border h-[400px]" />
         </div>
     </div>
-  
 </template>
 
 <script scoped>

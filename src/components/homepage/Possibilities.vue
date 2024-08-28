@@ -35,7 +35,7 @@
     
         </div>
         <div class="w-[400px] h-[600px]">
-            <q-img src="girl_certificate.png" class="object-contain" />
+            <q-img src="homepage_images/girl_certificate.png" class="object-contain" />
         </div>
     </div>
   </div>
