@@ -1,14 +1,24 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+  <div>
+    <Lander />
+    <CreateCertificate />
+    <WhyTest />
+    <Transparency />
+    <Possibilities />
+    <Customize />
+    <Start />
+  </div>
 </template>
 
 <script setup>
+import Lander from '../components/homepage/Lander.vue'
+import CreateCertificate from '../components/CreateCertificate.vue'
+import WhyTest from '../components/homepage/WhyTest.vue'
+import Transparency from '../components/homepage/Transparency.vue'
+import Possibilities from '../components/homepage/Possibilities.vue'
+import Customize from '../components/homepage/Customize.vue'
+import Start from '../components/homepage/Start.vue'
+
 defineOptions({
   name: 'IndexPage'
 });
