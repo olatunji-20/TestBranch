@@ -6,9 +6,9 @@
         <div class="border h-[200px] w-[200px]">
             <p class="text-h6">Main Links</p>
             <ul class="q-mt-sm">
-                <li>Home</li>
+                <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="/about-us" >About us</router-link></li>
-                <li>Features and Pricing</li>
+                <li> <router-link to="/features-and-pricing" >Features and Pricing</router-link></li>
                 <li>Login / SIgn up</li>
             </ul>
         </div>
