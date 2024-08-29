@@ -63,7 +63,7 @@ const reasons = ref([
         icon: "sms",
         explanation: "Data secured on Blockchain: safe, accessible, no misuse"
     }
-])
+]);
 
 </script>
 
