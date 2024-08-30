@@ -18,7 +18,7 @@
                 <li>Terms of Use</li>
                 <li>Privacy Policy</li>
                 <li>Accessibility</li>
-                <li>Contact us</li>
+                <li><router-link to="/contact-us"> Contact us</router-link></li>
                 <li>Help Center</li>
             </ul>
         </div>

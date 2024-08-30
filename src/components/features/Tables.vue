@@ -31,7 +31,7 @@
         <tr>
           <td class="text-left">Sub Accounts</td>
           <td class="text-center">305</td>
-          <td class="text-center">3.7</td>
+          <td class="text-center text-secondary"><q-icon name="check" /></td>
           <td class="text-center">67</td>
         </tr>
         <tr class="bg-gray-200">
@@ -43,7 +43,7 @@
         <tr>
           <td class="text-left">Remote API Publishing</td>
           <td class="text-center">356</td>
-          <td class="text-center">16</td>
+          <td class="text-center"><q-icon name="sms" /></td>
           <td class="text-center">49</td>
         </tr>
         <tr class="bg-gray-200">

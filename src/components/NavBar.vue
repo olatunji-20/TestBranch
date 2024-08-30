@@ -7,7 +7,7 @@
     <ul style="list-style-type: none;">
         <q-link class="inline-block"><router-link to="/">Home</router-link></q-link>
         <q-link class="inline-block ml-6"><router-link to="/features-and-pricing">Features and Pricing</router-link> </q-link>
-        <q-link class="inline-block ml-6">Contact us</q-link>
+        <q-link class="inline-block ml-6"><router-link to="/contact-us">Contact us</router-link></q-link>
     </ul>
 
     <div class="">
