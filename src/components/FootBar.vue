@@ -9,7 +9,7 @@
                 <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="/about-us" >About us</router-link></li>
                 <li> <router-link to="/features-and-pricing" >Features and Pricing</router-link></li>
-                <li>Login / SIgn up</li>
+                <li><router-link to="/login">Login</router-link> / <router-link to="/signup">Sign up</router-link></li>
             </ul>
         </div>
         <div class="border h-[200px] w-[200px]">

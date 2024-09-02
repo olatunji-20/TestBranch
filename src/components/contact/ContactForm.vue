@@ -5,18 +5,21 @@
         <p class="text-body1">Feel free to send us a message, if you unable to find answer from our FAQ</p>
 
         <q-form>
-            <q-input rounded outlined v-model="text" label="Your Name" bg-color="grey" class="my-10 h-4 input-box" />
-            <q-input rounded outlined v-model="text" label="Your Email" bg-color="grey" class="my-10 h-4 input-box" />
-            <q-input rounded outlined v-model="text" label="Your Phone" bg-color="grey" class="my-10 h-4 input-box" />
-            <q-input
-                v-model="text"
-                filled
-                rounded
-                bg-color="grey"
-                type="textarea"
-                />
+            <q-input outlined rounded dense v-model="text" label="Your Name" bg-color="grey" class="my-10 h-4 input-box" />
+            <q-input outlined rounded dense v-model="text" label="Your Email" bg-color="grey" class="my-10 h-4 input-box" />
+            <q-input outlined rounded dense v-model="text" label="Your Phone" bg-color="grey" class="my-10 h-4 input-box" />
 
-            <q-btn label="Send Message" class="q-my-xl q-px-lg" rounded outline />
+            <div class="">
+              <input
+                  v-model="text"
+                  bg-color="grey"
+                  type="textarea"
+                  placeholder="Your Message"
+                  class="w-[100%] h-[150px] rounded-2xl border-2 border-green-500 bg-gray-300 indent-2"
+                  />
+            </div>
+
+            <q-btn label="Send Message" class="q-mt-xl q-px-lg" rounded outline />
 
         </q-form>
     </div>
@@ -34,10 +37,4 @@
 .direct {
     background-image: url("contact_images/reach.png");
 }
-
-:deep(.input-box .q-field__control),
-:deep(.input-box .q-field__marginal) {
-  height: 50px;
-}
-
 </style>

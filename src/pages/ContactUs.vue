@@ -5,12 +5,14 @@
         <p class="text-xl q-py-lg">At TestBranch, we value your questions, feedback, and suggestions. Our<br /> team is dedicated to providing you with the best support possible. </p>
     </div>
     <ContactForm />
+    <Frequently />
     <CreateCertificate />
   </div>
 </template>
 
 <script setup>
 import ContactForm from 'src/components/contact/ContactForm.vue';
+import Frequently from 'src/components/contact/Frequently.vue';
 import CreateCertificate from 'src/components/CreateCertificate.vue';
 
 </script>
