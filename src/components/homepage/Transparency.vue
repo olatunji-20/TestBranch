@@ -1,7 +1,7 @@
 <template>
   <div class="text-center border-2 border-red-400 p-20">    
     <h2 class="text-h6">CERTIFICATION TRANSPARENCY</h2>
-    <h2 class="text-h3 text-bold">homepage_images/Benefits of having certificate data on the <span class="text-secondary">Blockchain</span></h2>
+    <h2 class="text-h3 text-bold">Benefits of having certificate data on the <span class="text-secondary">Blockchain</span></h2>
     <div class="border-2 border-green-400 my-20 grid grid-cols-2 px-12 gap-10">
       <div class="my-4 h-[300px]">
         <q-img src="homepage_images/benefit-img-1.png" class="object-contain" />

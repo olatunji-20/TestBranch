@@ -15,9 +15,9 @@
         <div class="border h-[200px] w-[200px]">
             <p class="text-h6">Legal & Support</p>
             <ul class="q-mt-sm">
-                <li>Terms of Use</li>
-                <li>Privacy Policy</li>
-                <li>Accessibility</li>
+                <li><router-link to="/terms-of-use">Terms of Use</router-link></li>
+                <li><router-link to="/privacy-policy">Privacy Policy</router-link></li>
+                <li><router-link to="/accessibility">Accessibility</router-link></li>
                 <li><router-link to="/contact-us"> Contact us</router-link></li>
                 <li>Help Center</li>
             </ul>
