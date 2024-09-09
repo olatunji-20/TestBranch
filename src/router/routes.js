@@ -19,6 +19,7 @@ const routes = [
     component: () => import('layouts/CertLayout.vue'),
     children: [
       { path: '', component: () => import('src/pages/certificate/Certification.vue') },
+      { path: '/add-certificate', component: () => import('src/pages/certificate/AddCertificate.vue') },
       { path: '/analytics', component: () => import('src/pages/certificate/Analytics.vue') },
       { path: '/account', component: () => import('src/pages/certificate/Account.vue') },
       { path: '/groups-and-members', component: () => import('src/pages/certificate/GroupsMembers.vue') }

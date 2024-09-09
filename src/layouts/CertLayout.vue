@@ -1,7 +1,7 @@
 <template>
-    <q-layout view="lHh lpR lFf">
+    <q-layout view="lhh lpR lFf">
   
-      <q-header elevated="false" class="bg-secondary text-white q-py-lg">
+      <q-header class="bg-secondary text-white q-py-lg">
         <q-toolbar>
           <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
@@ -15,7 +15,7 @@
             <q-img src="testbranch.png" alt="testbranch logo" class="" />
         </div>
 
-        <div class="fit border-2 border-blue-400 pl-4">
+        <div class="border-2 border-blue-400 pl-4">
           <q-list>
 
             <template v-for="(menuItem, index) in menuList" :key="index">
@@ -58,7 +58,7 @@
           },
           {
               icon: 'send',
-              link: "/cerf",
+              link: "/account",
               label: 'Designs'
           },
           {
@@ -68,7 +68,7 @@
           },
           {
               icon: 'error',
-              link: "/cerf",
+              link: "/account",
               label: 'Approvers'
           },
           {
@@ -78,7 +78,7 @@
           },
           {
               icon: 'feedback',
-              link: "/cerf",
+              link: "/account",
               label: 'Subscription and Billing'
           },
           {
