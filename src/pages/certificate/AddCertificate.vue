@@ -1,6 +1,6 @@
 <template>
-  <div class="border-2 border-green-400 p-8 bg-gray-100">
-    <div class="border border-blue-400 rounded-md pb-20 relative bg-white">
+  <div class="p-8 bg-gray-100">
+    <div class="rounded-xl pb-20 relative bg-white">
       <div class="pt-4 px-4">
         <router-link to="/certifications">
             <q-icon name="sms" class="bg-red-300 p-2 rounded-full q-mr-sm relative bottom-1" />

@@ -36,7 +36,7 @@
                 <template #body-cell-iron="props">
                   <q-td :props="props">
                     <q-btn-group rounded>
-                      <q-btn-dropdown auto-close no-caps rounded color="primary" label="Edit" split>
+                      <q-btn-dropdown label="Edit" to="/edit-certificate" auto-close no-caps rounded color="primary" split>
                         <q-list padding style="width: 250px">
                           <q-item clickable>
                             <p>Copy</p>

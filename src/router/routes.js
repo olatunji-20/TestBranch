@@ -20,6 +20,7 @@ const routes = [
     children: [
       { path: '', component: () => import('src/pages/certificate/Certification.vue') },
       { path: '/add-certificate', component: () => import('src/pages/certificate/AddCertificate.vue') },
+      { path: '/edit-certificate', component: () => import('src/pages/certificate/EditCertificate.vue') },
       { path: '/analytics', component: () => import('src/pages/certificate/Analytics.vue') },
       { path: '/account', component: () => import('src/pages/certificate/Account.vue') },
       { path: '/groups-and-members', component: () => import('src/pages/certificate/GroupsMembers.vue') }
