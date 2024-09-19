@@ -6,7 +6,7 @@
           <router-link to="/groups-and-members">
               <q-icon name="sms" class="bg-red-300 p-2 rounded-full q-mr-sm relative bottom-1" />
           </router-link>
-          <h3 class="inline text-h5 font-bold">Create New Group</h3>
+          <h3 class="inline text-h5 font-bold">Edit Group and Members</h3>
         </div>
         <div class="flex flex-row items-center my-4">
           <p class="text-secondary w-[auto] font-bold mr-2">Basic Details</p>
@@ -35,7 +35,7 @@
 
         <div class="mb-4">
           <q-checkbox v-model="attrType" label="Add custom Attributes" />
-          <div v-if="attrType" class="border border-purple-400 w-[50%] bg-gray-200 p-2 ml-10">
+          <div v-if="attrType" class="w-[50%] bg-gray-200 p-2 ml-10">
             <q-input placeholder="Attribute Label (e.g: Date of birth)" outlined rounded dense class="bg-white rounded-full" />
             <q-select :options="options" outlined rounded dense label="Select attribute type" class="mt-2 bg-white rounded-full" />
           </div>
@@ -44,9 +44,19 @@
 
       <hr class="border border-green-600" />
 
-      <div class="absolute right-4 q-mt-sm">
-        <q-btn label="Cancel" rounded outline no-caps class="q-mr-md" />
-        <q-btn label="Create Group" rounded outline no-caps class="bg-secondary" />
+      <div class="p-4">
+        <h1 class="text-xl text-bold">Manage Members</h1>
+        <div class="my-2 row gap-x-10">
+          <q-input icon="sms" outlined rounded dense placeholder="Search for member" class="flex-1">
+            <template v-slot:append>
+              <q-icon name="search" />
+            </template>
+          </q-input>
+          <q-btn label="Add Member" icon="sms" no-caps flat rounded class="bg-green-500" />
+          <q-btn label="Upload CSV" icon="sms" no-caps flat rounded class="bg-yellow-400" />
+          <q-btn label="Transfer Ownership" outline icon="sms" no-caps rounded />
+        </div>
+
       </div>
 
     </div>

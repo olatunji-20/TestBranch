@@ -5,7 +5,7 @@
           <q-table
               flat bordered
               ref="tableRef"
-              title="Group and Members"
+              title="Approvers"
               :rows="rows"
               :columns="columns"
               row-key="id"
@@ -36,7 +36,7 @@
               <template #body-cell-iron="props">
                 <q-td :props="props">
                   <q-btn-group rounded>
-                    <q-btn-dropdown label="Edit" to="/edit-group-and-members" auto-close no-caps rounded color="primary" split>
+                    <q-btn-dropdown label="Resend" to="/edit-group-and-members" auto-close no-caps rounded color="primary" split>
                       <q-list padding style="width: 250px">
                         <q-item clickable>
                           <p>Delete</p>
@@ -59,10 +59,10 @@ import { ref, onMounted } from 'vue'
 
 const columns = [
   // { name: 'image', align: 'left', label: 'Preview', field: 'image', sortable: true },
-  { name: 'name', align: 'left', label: 'Group Name', field: 'name', sortable: true },
-  { name: 'fat', align: 'center', label: 'No of Members', field: 'fat', sortable: true },
+  { name: 'name', align: 'left', label: 'Name', field: 'name', sortable: true },
+  { name: 'fat', align: 'center', label: 'Email', field: 'fat', sortable: true },
   { name: 'calcium', align: 'center', label: 'Created date', field: 'calcium', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'calcium', align: 'center', label: 'Modified date', field: 'calcium', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
+  { name: 'calcium', align: 'center', label: 'Status', field: 'calcium', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
   { name: 'iron', align: 'center', label: '...', field: ''}
 ]
 

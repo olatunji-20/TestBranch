@@ -23,7 +23,10 @@ const routes = [
       { path: '/edit-certificate', component: () => import('src/pages/certificate/EditCertificate.vue') },
       { path: '/analytics', component: () => import('src/pages/certificate/Analytics.vue') },
       { path: '/account', component: () => import('src/pages/certificate/Account.vue') },
-      { path: '/groups-and-members', component: () => import('src/pages/certificate/GroupsMembers.vue') }
+      { path: '/groups-and-members', component: () => import('src/pages/certificate/GroupsMembers.vue') },
+      { path: '/new-group', component: () => import('src/pages/certificate/NewGroup.vue') },
+      { path: '/edit-group-and-members', component: () => import('src/pages/certificate/EditGroup.vue') },
+      { path: '/approvers', component: () => import('src/pages/certificate/Approvers.vue') },
     ]
   },
 
