@@ -7,11 +7,11 @@
           </router-link>
           <h3 class="inline text-h5 font-bold">Edit Certificate</h3>
         </div>
-          
-  
+
+
           <div class="px-4">
             <div class="flex flex-row items-center my-4">
-              <p class="text-secondary w-[auto] font-bold mr-2">Basic Details</p>
+              <p class="text-secondary w-[auto] font-bold mr-2">Basic Details basic details</p>
               <hr class="flex-1 border border-purple-500" />
             </div>
             <div class="py-2 grid grid-cols-2 gap-4">
@@ -21,22 +21,22 @@
               </div>
               <div>
                 <p class="font-bold">Code (optional)</p>
-                <q-input type="text" rounded outlined placeholder="Code" dense />
+                <q-input type="text" rounded outlined placeholder="Code" dense /> 4
               </div>
-              <div>            
+              <div>
                 <p class="font-bold">Issuer</p>
                 <q-input type="text" rounded outlined placeholder="Issuer" dense />
               </div>
-              <div>            
+              <div>
                 <p class="font-bold">Design</p>
                 <q-select :options="options" type="text" rounded outlined label="Select design" dense />
               </div>
-              <div>            
+              <div>
                 <p class="font-bold">Group</p>
                 <q-select :options="options" type="text" rounded outlined label="Select group" dense />
               </div>
             </div>
-            
+
             <div class="flex flex-row items-center my-4">
               <p class="text-secondary w-[auto] font-bold mr-2">Start Date</p>
               <hr class="flex-1 border border-purple-500" />
@@ -60,18 +60,18 @@
                 </q-input>
               </div>
             </div>
-            
+
             <div class="flex flex-row items-center my-4">
               <p class="text-secondary w-[auto] font-bold mr-2">Expiry Date</p>
               <hr class="flex-1 border border-purple-500" />
             </div>
             <div>
               <q-checkbox keep-color v-model="expiry" val="issued" label="The certificate has an expiry date" color="red" /><br />
-    
+
               <div v-if="expiry" class="ml-1">
                 <q-radio keep-color v-model="expiryDate" val="fixedDuration" label="The certificate is valid for a fixed duration" color="red" /><br />
                 <div v-if="expiryDate === 'fixedDuration'" class="p-2 w-[50%] ml-10 bg-gray-200">
-                  <q-select :options="options" rounded outlined label="1 Year" dense class="bg-white rounded-full" />            
+                  <q-select :options="options" rounded outlined label="1 Year" dense class="bg-white rounded-full" />
                 </div>
                 <q-radio keep-color v-model="expiryDate" val="fixedDate" label="The certificate is valid until a fixed date" color="red" />
                 <div v-if="expiryDate === 'fixedDate'" class="p-2 w-[50%] ml-10 bg-gray-200">
@@ -90,9 +90,9 @@
                   </q-input>
                 </div>
               </div>
-    
+
             </div>
-            
+
             <div class="flex flex-row items-center my-4">
               <p class="text-secondary w-[auto] font-bold mr-2">Certificate Sending</p>
               <hr class="flex-1 border border-purple-500" />
@@ -102,17 +102,17 @@
               <q-radio keep-color v-model="certSend" val="afterApproval" label="Send certificate to recipients only after approval by" color="green" /><br />
               <div v-if="certSend === 'afterApproval'" class="p-3 w-[50%] ml-10 bg-gray-200">
                 <q-select :options="options" rounded outlined label="My Account" dense class="bg-white rounded-full" />
-                <q-checkbox keep-color v-model="addGrade" val="ed" label="Add Grade or Score Attribute" color="purple" /><br /> 
-                <q-input v-if="addGrade" placeholder="Enter Attribute Label" class="bg-white rounded-full" rounded outlined dense />        
+                <q-checkbox keep-color v-model="addGrade" val="ed" label="Add Grade or Score Attribute" color="purple" /><br />
+                <q-input v-if="addGrade" placeholder="Enter Attribute Label" class="bg-white rounded-full" rounded outlined dense />
               </div>
-              
+
               <q-radio keep-color v-model="certSend" val="fixedDate" label="The certificate is valid until a fixed date" color="green" />
               <div v-if="certSend === 'fixedDate'" class="p-3 w-[50%] ml-10 bg-gray-200">
                 <p class="text-sm my-2">When the certificate for</p>
-                <q-select :options="options" rounded outlined label="Certification 1" dense class="bg-white rounded-full" />            
+                <q-select :options="options" rounded outlined label="Certification 1" dense class="bg-white rounded-full" />
               </div>
             </div>
-            
+
             <div class="flex flex-row items-center my-4">
               <p class="text-secondary w-[auto] font-bold mr-2">Additional Actions</p>
               <hr class="flex-1 border border-purple-500" />
@@ -121,23 +121,23 @@
               <q-checkbox label="Send a certificate issue notification email to my email address" v-model="emailAction" /><br />
               <q-checkbox label="Invoke external API when a certificate is issued" v-model="apiAction" />
               <div v-if="apiAction" class="p-3 w-[50%] ml-10 bg-gray-200">
-                <q-input rounded outlined placeholder="api address" dense class="bg-white rounded-full" />            
+                <q-input rounded outlined placeholder="api address" dense class="bg-white rounded-full" />
               </div>
             </div>
-    
+
           </div>
-  
+
           <hr class="my-8 border" />
-  
+
           <div class="w-[300px] absolute right-0">
             <q-btn label="Cancel" rounded outline no-caps class="q-mr-md" />
             <q-btn label="Edit and Publish" rounded outline no-caps class="bg-secondary" />
           </div>
-  
+
       </div>
     </div>
   </template>
-  
+
   <script setup>
   import { ref } from 'vue';
   const options = ['option-1', 'option-2', 'option-3'];
@@ -151,7 +151,7 @@
   const date = ref('2019/02/01')
   const email = ref("")
   </script>
-  
+
   <style>
-  
+
   </style>
